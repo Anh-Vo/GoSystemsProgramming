@@ -33,3 +33,11 @@ func nameMinMax(x, y int) (min, max int) {
 	}
 	return
 }
+
+func sort(x, y int) (int, int) {
+	if x > y {
+		return x, y
+	} else {
+		return y, x
+	}
+}
