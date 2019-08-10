@@ -11,3 +11,14 @@ func unnamedMinMax(x, y int) (int, int) {
 		return min, max
 	}
 }
+
+func minMax(x, y int) (min, max int) {
+	if x > y {
+		min = y
+		max = x
+	} else {
+		min = x
+		max = y
+	}
+	return min, max
+}
