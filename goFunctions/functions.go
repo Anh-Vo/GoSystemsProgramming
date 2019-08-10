@@ -22,3 +22,14 @@ func minMax(x, y int) (min, max int) {
 	}
 	return min, max
 }
+
+func nameMinMax(x, y int) (min, max int) {
+	if x > y {
+		min = y
+		max = x
+	} else {
+		min = x
+		max = y
+	}
+	return
+}
