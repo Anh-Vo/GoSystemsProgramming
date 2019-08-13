@@ -16,7 +16,7 @@ func main() {
 		num, err := strconv.Atoi(arguments[i])
 		if err == nil {
 			if num == 0 {
-				fmt.Println("Found a 0. Stopping.")
+				// fmt.Println("Found a 0. Stopping.")
 				break
 			} else {
 				if num > max {
@@ -28,7 +28,8 @@ func main() {
 			}
 		}
 	}
-	if len(arguments) > 1 {
-		fmt.Printf("Min: %d, Max: %d", min, max)
+	if len(arguments) <= 1 {
+		min, max = 0, 0
 	}
+	fmt.Printf("Min: %d, Max: %d", min, max)
 }
